@@ -3,8 +3,8 @@ import pickle
 import streamlit as st
 from sklearn.preprocessing import StandardScaler
 
-model = pickle.load(open('model.pkl','rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))
+model = pickle.load(open('Streamlit_rakuten/model.pkl','rb'))
+scaler = pickle.load(open('Streamlit_rakuten/scaler.pkl', 'rb'))
 
 def predict(gender, age, hypertension, heart_disease, ever_married, work_type, residence_type, avg_glucose_level, smoking):
     # Gender
